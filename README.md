@@ -1,11 +1,11 @@
 
 AlbumView is part of Assignment sample code
 
-#Functionality inside Application:
+**#Functionality inside Application:**
 1. Album List can be shown on view , the list is sorted
 2. Album List are avaialble on offline mode also.
 
-#Technology Stack Used for the Application:
+#**Technology Stack Used for the Application:**
 
 1. Kotlin as primary development language
 2. MVVM Architecure
@@ -15,8 +15,8 @@ AlbumView is part of Assignment sample code
 6. Kotlin Coroutine for MultiThreading
 7. JUnit and Mockito For Unit Test cases and Expresso for Instrumentation
 
-#Approach for this Application Developement
-The main functional requirement for the app is to call the Album API and show the sorted list having offline support.
+#**Approach for this Application Developement**
+  The main functional requirement for the app is to call the Album API and show the sorted list having offline support.
 For creation of this app , I have used the MVVM architecture with the help of latest Jetpack Compenent.
 I have used the latest KOIN library for Dependency Injection as the KOIN is lightweight DI framework and Kotlin specific also much easy to use. 
 For the performance perspecive, I have sort the incoming album list on background thread and for that use Kotlin's Flow. So all the sorting logic run on IO thread and sorting logic on UI thread to avoid the UI blocking.
@@ -31,7 +31,7 @@ There are total 4 layer of app structure.
 4 Presentation Layer :
   This layer mainly deals with the Appliation UI like ViewModel,Activity, Adapter classes .
 
-#Future Improvement or Enhancement :
+#**Future Improvement or Enhancement** :
 1. We can add more detail for Album list like detail and album images . 
 2. For performance perspective, we can use local caching also with room database so that even network is ON we dont have to call API evrytime it can take it from our local cache.
 3. For app security , I have already keep the URL as encoded string in Buid config file . We can covert all the URL like this way .
