@@ -22,13 +22,13 @@ I have used the latest KOIN library for Dependency Injection as the KOIN is ligh
 For the performance perspecive, I have sort the incoming album list on background thread and for that use Kotlin's Flow. So all the sorting logic run on IO thread and sorting logic on UI thread to avoid the UI blocking.
 For the security purpose , I keep the API URL in build config in the the form BASE 64 encoded by writting Extention Function for String encoding.
 There are total 4 layer of app structure.
-1. Core Layer :
-  This layer contain the Core re-usable component for Activity and View Model. I have created the core classes which can extend by the any activity or viewmodel use in future .     This e layer class are generic one so that any component can extend that.
-2.Data Layer :
+1. **Core Layer** :
+  This layer contain the Core re-usable component for Activity and View Model. I have created the core classes which can extend by the any activity or viewmodel use in future .   This e layer class are generic one so that any component can extend that.
+2.**Data Layer** :
   This layer having all data related classes like Model Classes , Database classes ,API helper claases .
-3. Domain :
+3.**Domain** :
     This layer contrain mainly DI related classed and Repository components.
-4 Presentation Layer :
+4. **Presentation Layer** :
   This layer mainly deals with the Appliation UI like ViewModel,Activity, Adapter classes .
 
 #**Future Improvement or Enhancement** :
@@ -38,4 +38,3 @@ There are total 4 layer of app structure.
 4. For Efficient scrolling of large number of data set , we can use DiffUtil for recyclerview and also Jetpack Paging for Pagination for loading large amount of data .
 5. We can make more resuable component , which can be used by our general component like in this app I have used Core classed for Activity and ViewModel So in same way we can write the core claases for our recycler view adapter.
 
-7. For Secuirty purpose , we can make API call more secure by applying 
